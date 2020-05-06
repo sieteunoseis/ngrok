@@ -30,7 +30,7 @@ function downloadNgrok(callback, options) {
 
   function getCdnUrl() {
     const arch = options.arch || process.env.NGROK_ARCH || os.platform() + os.arch();
-    const cdn = options.cdnUrl || process.env.NGROK_CDN_URL || 'https://bin.equinox.io';
+    const cdn = options.cdnUrl || process.env.NGROK_CDN_URL || 'http://bin.equinox.io';
     const cdnPath = options.cdnPath || process.env.NGROK_CDN_PATH || '/c/4VmDzA7iaHb/ngrok-stable-';
     const cdnFiles = {
       darwinia32: cdn + cdnPath + 'darwin-386.zip',
